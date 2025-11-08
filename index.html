@@ -3,183 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>【ショップ名】｜手作りマーケット出店紹介</title>
-    <style>
-        /*
-        ------------------------------------------
-        基本スタイルとレスポンシブデザイン
-        ------------------------------------------
-        */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f5f0; /* 背景色: 暖色系の明るいベージュ */
-            color: #333;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 900px; /* PC表示の最大幅 */
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        header {
-            background-color: #a0522d; /* ヘッダー色: 暖色系の茶色（セピア） */
-            color: white;
-            padding: 30px 20px;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        header h1 {
-            margin: 0 0 10px 0;
-            font-size: 2.2em;
-            letter-spacing: 2px;
-        }
-
-        header p {
-            margin: 0;
-            font-size: 1.1em;
-            font-style: italic;
-        }
-
-        section {
-            padding: 40px 20px;
-            margin-bottom: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-        }
-
-        h2 {
-            color: #d2691e; /* 見出し色: 暖色系の濃いオレンジ（チョコレート） */
-            text-align: center;
-            margin-bottom: 30px;
-            border-bottom: 3px solid #f4a460; /* 暖色系の線 */
-            padding-bottom: 10px;
-            font-size: 1.8em;
-        }
-
-        /*
-        ------------------------------------------
-        コンテンツ要素のスタイル
-        ------------------------------------------
-        */
-        .introduction p {
-            font-size: 1.1em;
-            text-align: justify;
-            margin-bottom: 20px;
-        }
-
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-
-        .item-photo {
-            width: 100%; /* スマホでは1列 */
-            max-width: 300px; /* PCでの最大幅 */
-            height: auto;
-            border-radius: 6px;
-            object-fit: cover;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .qr-section {
-            text-align: center;
-            padding: 30px 20px;
-            background-color: #fffaf0; /* 暖色系の淡い背景 */
-            border: 1px dashed #d2691e;
-            border-radius: 8px;
-            margin-top: 30px;
-        }
-
-        .qr-code img {
-            max-width: 150px;
-            height: auto;
-            border: 5px solid white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-            background-color: #a0522d;
-            color: white;
-            font-size: 0.9em;
-        }
-
-        /*
-        ------------------------------------------
-        PC表示用のスタイル (768px以上)
-        ------------------------------------------
-        */
-        @media (min-width: 768px) {
-            header h1 {
-                font-size: 3em;
-            }
-            .introduction p {
-                text-align: center;
-            }
-            .item-photo {
-                width: calc(50% - 10px); /* PCでは2列 */
-                max-width: none;
-            }
-        }
-    </style>
+    <title>革工房 Loisir（ロワジール）｜手作りマーケット出店紹介</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <h1>&#128099; 【ショップ名】 のレザークラフト</h1>
-        <p>「使い込むほどに愛着が湧く」本物の革製品をあなたに</p>
+    <header class="main-header">
+        <div class="header-content container">
+            <h1>&#128099; 革工房 Loisir（ロワジール）</h1>
+            <p>第二の人生で始める、使い込むほどに愛着が湧く革小物</p>
+        </div>
     </header>
 
-    <div class="container">
-
-        <section class="introduction">
-            <h2>私たちの想い</h2>
-            <p>
-                私たちは、革の持つ温もりと、経年変化の美しさに魅了されたレザークラフトショップです。
-                一針一針、心を込めて手縫いすることで、既製品にはない**「魂の宿った一点もの」**を生み出しています。
-                素材は上質なタンニンなめし革を中心に厳選。手に取った瞬間から、あなただけの物語が始まることを願っています。
+    <main class="container">
+        <section class="intro-section card">
+            <h2>ごあいさつ</h2>
+            <p class="intro-text">
+                「革工房 ロワジール」の職人でございます。
+                **サラリーマンを定年まで勤め上げ**、**第二の人生**として革を使用した小物作りを始めました。
+                若い頃からの趣味が高じて、今ではすっかりレザークラフトに夢中でございます。
             </p>
-            <p>
-                今回は、人気の**ミニ財布**や**キーケース**、そして手作りマーケット限定の**レザー小物**をお持ちします。ぜひ、革の質感と香りを直接お確かめください！
+            <p class="intro-text">
+                当工房の作品は、すべて手縫いにこだわった一点ものです。長年の経験で培った丁寧さと、
+                "おじいちゃん職人"ならではの温もりを、皆様の日常に添えたいと願っております。
+                定期的に**京都**を中心とした手作り市などのイベントに出店しておりますので、
+                ぜひ、会場でお声がけください。お待ちしております。
             </p>
+            <div class="hashtags">#京都 #おじいちゃん職人 #レザークラフト</div>
         </section>
 
         <section class="gallery-section">
-            <h2>ギャラリー</h2>
-            <div class="gallery">
-                <img src="[ここに作品1の画像パスを入力]" alt="手縫いのロングウォレット" class="item-photo">
-                
-                <img src="[ここに作品2の画像パスを入力]" alt="カスタム可能なキーホルダー" class="item-photo">
-
-                <img src="[ここに作品3の画像パスを入力]" alt="ヌメ革のカードケース" class="item-photo">
+            <h2>主な作品</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item card">
+                    <img src="[ここに作品1の画像パスを入力 - 例: ./images/wallet.jpg]" alt="手縫いのロングウォレット" class="item-photo">
+                    <h3>定番のロングウォレット</h3>
+                    <p>堅牢な革を使い、長年愛用できるシンプルなデザインです。</p>
+                </div>
+                <div class="gallery-item card">
+                    <img src="[ここに作品2の画像パスを入力 - 例: ./images/keycase.jpg]" alt="カスタム可能なキーホルダー" class="item-photo">
+                    <h3>シンプルキーケース</h3>
+                    <p>ポケットに収まりやすい、手に馴染むサイズのキーケースです。</p>
+                </div>
+                <div class="gallery-item card">
+                    <img src="[ここに作品3の画像パスを入力 - 例: ./images/cardcase.jpg]" alt="ヌメ革のカードケース" class="item-photo">
+                    <h3>経年変化を楽しむ名刺入れ</h3>
+                    <p>使えば使うほど色濃く変化するヌメ革を使用しています。</p>
+                </div>
+                 <div class="gallery-item card">
+                    <img src="[ここに作品4の画像パスを入力 - 例: ./images/pouch.jpg]" alt="限定ミニポーチ" class="item-photo">
+                    <h3>【会場限定】小さな革小物</h3>
+                    <p>イベント限定の、遊び心のある可愛らしいアイテムです。</p>
+                </div>
             </div>
         </section>
 
-        <section class="qr-section">
-            <h2>もっと見る！</h2>
-            <p>
-                私たちの詳しい情報（オンラインショップ、SNSなど）はこちらから！<br>
-                **QRコードをスキャン**して、ぜひフォローしてくださいね。
+        <section class="qr-section card">
+            <h2>ウェブサイトはこちら</h2>
+            <p class="qr-description">
+                その他の作品や、今後の出店情報はウェブサイトにてご確認いただけます。<br>
+                **QRコードをスキャン**して、ぜひご覧ください。
             </p>
             <div class="qr-code">
-                <img src="[ここに自ページへのリンクQRコードの画像パスを入力]" alt="自ページへのリンクQRコード">
+                <img src="[ここに自ページへのリンクQRコードの画像パスを入力 - 例: ./images/my_shop_qr.png]" alt="革工房ロワジールへのリンクQRコード">
             </div>
         </section>
+    </main>
 
-    </div>
-
-    <footer>
-        <p>&copy; 2024 【ショップ名】 All Rights Reserved.</p>
+    <footer class="main-footer">
+        <p>&copy; 2024 革工房 Loisir（ロワジール）</p>
     </footer>
 
 </body>
