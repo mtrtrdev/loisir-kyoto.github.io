@@ -25,7 +25,7 @@ body {
     font-family: 'Noto Sans JP', sans-serif;
     background-color: var(--light-beige);
     color: var(--dark-text);
-    line-height: 1.7; /* 行間を少し広げ、読みやすく */
+    line-height: 1.7; 
     scroll-behavior: smooth;
 }
 
@@ -53,6 +53,14 @@ h1 {
     letter-spacing: 1.5px;
     color: var(--card-bg);
 }
+
+/* --- 追加/修正点: CSSで太字を制御 --- */
+.highlight {
+    font-weight: 700; /* Noto Sans JP の太字ウェイト */
+    color: var(--primary-brown); /* 強調色をメインブラウンに */
+    /* 必要に応じて、背景色や下線でさらに強調することも可能 */
+}
+/* -------------------------------------- */
 
 .main-header p {
     font-family: 'Noto Sans JP', sans-serif;
@@ -90,7 +98,6 @@ h2::after {
 ------------------------------------------
 */
 .main-header {
-    /* 渋い革のようなグラデーション */
     background: linear-gradient(135deg, var(--primary-brown) 0%, #693e0b 100%);
     padding: 60px 20px;
     box-shadow: 0 5px 15px var(--shadow-light);
@@ -120,12 +127,8 @@ h2::after {
     font-weight: bold;
     letter-spacing: 1px;
     padding: 10px;
-    background-color: #fcf8f0; /* 薄い背景で強調 */
+    background-color: #fcf8f0;
     border-radius: 5px;
-    display: inline-block;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
     display: block;
 }
 
@@ -179,7 +182,7 @@ section {
     height: 250px;
     object-fit: cover;
     border-radius: 8px;
-    border: 3px solid var(--light-beige); /* 革製品のような軽い縁取り */
+    border: 3px solid var(--light-beige);
     transition: transform 0.3s ease;
 }
 
@@ -237,7 +240,7 @@ QRコードセクション
         font-size: 2.2em;
     }
     .intro-text {
-        text-align: left; /* スマホでは左寄せで読みやすく */
+        text-align: left;
     }
     .card {
         padding: 30px 20px;
