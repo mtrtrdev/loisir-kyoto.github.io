@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【ショップ名】｜手作りマーケット出店紹介</title>
+    <style>
+        /*
+        ------------------------------------------
+        基本スタイルとレスポンシブデザイン
+        ------------------------------------------
+        */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f5f0; /* 背景色: 暖色系の明るいベージュ */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px; /* PC表示の最大幅 */
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #a0522d; /* ヘッダー色: 暖色系の茶色（セピア） */
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.2em;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.1em;
+            font-style: italic;
+        }
+
+        section {
+            padding: 40px 20px;
+            margin-bottom: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: #d2691e; /* 見出し色: 暖色系の濃いオレンジ（チョコレート） */
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #f4a460; /* 暖色系の線 */
+            padding-bottom: 10px;
+            font-size: 1.8em;
+        }
+
+        /*
+        ------------------------------------------
+        コンテンツ要素のスタイル
+        ------------------------------------------
+        */
+        .introduction p {
+            font-size: 1.1em;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .item-photo {
+            width: 100%; /* スマホでは1列 */
+            max-width: 300px; /* PCでの最大幅 */
+            height: auto;
+            border-radius: 6px;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .qr-section {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #fffaf0; /* 暖色系の淡い背景 */
+            border: 1px dashed #d2691e;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        .qr-code img {
+            max-width: 150px;
+            height: auto;
+            border: 5px solid white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background-color: #a0522d;
+            color: white;
+            font-size: 0.9em;
+        }
+
+        /*
+        ------------------------------------------
+        PC表示用のスタイル (768px以上)
+        ------------------------------------------
+        */
+        @media (min-width: 768px) {
+            header h1 {
+                font-size: 3em;
+            }
+            .introduction p {
+                text-align: center;
+            }
+            .item-photo {
+                width: calc(50% - 10px); /* PCでは2列 */
+                max-width: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>&#128099; 【ショップ名】 のレザークラフト</h1>
+        <p>「使い込むほどに愛着が湧く」本物の革製品をあなたに</p>
+    </header>
+
+    <div class="container">
+
+        <section class="introduction">
+            <h2>私たちの想い</h2>
+            <p>
+                私たちは、革の持つ温もりと、経年変化の美しさに魅了されたレザークラフトショップです。
+                一針一針、心を込めて手縫いすることで、既製品にはない**「魂の宿った一点もの」**を生み出しています。
+                素材は上質なタンニンなめし革を中心に厳選。手に取った瞬間から、あなただけの物語が始まることを願っています。
+            </p>
+            <p>
+                今回は、人気の**ミニ財布**や**キーケース**、そして手作りマーケット限定の**レザー小物**をお持ちします。ぜひ、革の質感と香りを直接お確かめください！
+            </p>
+        </section>
+
+        <section class="gallery-section">
+            <h2>ギャラリー</h2>
+            <div class="gallery">
+                <img src="[ここに作品1の画像パスを入力]" alt="手縫いのロングウォレット" class="item-photo">
+                
+                <img src="[ここに作品2の画像パスを入力]" alt="カスタム可能なキーホルダー" class="item-photo">
+
+                <img src="[ここに作品3の画像パスを入力]" alt="ヌメ革のカードケース" class="item-photo">
+            </div>
+        </section>
+
+        <section class="qr-section">
+            <h2>もっと見る！</h2>
+            <p>
+                私たちの詳しい情報（オンラインショップ、SNSなど）はこちらから！<br>
+                **QRコードをスキャン**して、ぜひフォローしてくださいね。
+            </p>
+            <div class="qr-code">
+                <img src="[ここに自ページへのリンクQRコードの画像パスを入力]" alt="自ページへのリンクQRコード">
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 【ショップ名】 All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
